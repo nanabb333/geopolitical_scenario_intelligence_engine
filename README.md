@@ -2,6 +2,8 @@
 
 Repo 4: Scenario Intelligence Layer.
 
+A deterministic scenario intelligence engine that turns geopolitical event descriptions into historical analog retrieval, market-reaction context, and executive decision-support briefs.
+
 This repository converts a user-described geopolitical event into a deterministic historical analog analysis using a local event-study database. It is designed as a research-to-intelligence product layer, not a forecasting system or investment tool.
 
 ## Product Vision
