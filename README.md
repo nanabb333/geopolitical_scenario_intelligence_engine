@@ -2,7 +2,7 @@
 
 Geopolitical Intelligence Analyst Copilot is a deterministic workflow automation product for geopolitical risk analysis. It turns analyst questions into structured intelligence briefs by combining scenario classification, historical analogue retrieval, observed market-reaction context, pathway framing, and Markdown memo export.
 
-The repository demonstrates business analytics, risk analytics, workflow automation, and product thinking in a local, auditable Python project. It is designed as a research-to-intelligence productivity layer, not a forecasting system, trading tool, or investment recommendation engine.
+The repository demonstrates business analytics, risk analytics, workflow automation, and AI-assisted decision-support thinking in a local, auditable Python project. It is designed as a research-to-intelligence productivity layer, not a forecasting system, trading tool, or investment recommendation engine.
 
 ## Product Overview
 
@@ -111,44 +111,7 @@ These files are documentation placeholders for future generated reports. They do
 
 ## Reproducibility
 
-Run validation from the repository root:
-
-```bash
-python3 -m compileall src
-python3 -m unittest discover tests
-```
-
-Generate a deterministic workbench report:
-
-```bash
-python3 src/run_scenario.py \
-  --query "US announces a new semiconductor subsidy package." \
-  --top-k 5 \
-  --output results/semiconductor_subsidy_brief.md
-```
-
-The same query and local CSV inputs produce the same report. No external APIs, LLM calls, live news feeds, dashboards, forecasting modules, or investment-recommendation logic are used.
-
-## What The System Does
-
-```text
-User question
-  -> Event classification
-  -> Historical analog retrieval
-  -> Market reaction comparison
-  -> Scenario pathways
-  -> Executive brief
-```
-
-The workflow produces:
-
-1. User Event Description
-2. Event Classification
-3. Most Similar Historical Events
-4. Historical Market Reactions
-5. Potential Future Pathways
-6. Key Risks and Uncertainties
-7. Executive Brief
+The same query and local CSV inputs produce the same report. The commands in [How To Run](#how-to-run) provide the reproducible scenario workflow and validation steps. No external APIs, LLM calls, live news feeds, dashboards, forecasting modules, or investment-recommendation logic are used.
 
 ## What The System Does Not Do
 
@@ -165,19 +128,7 @@ Similarity scores are deterministic retrieval scores only. They are not probabil
 
 ## Analyst Workbench
 
-The Analyst Workbench expands the original question-to-brief demo into a deterministic analyst workflow:
-
-```text
-Question
-  -> Scenario Classification
-  -> Historical Analogue Retrieval
-  -> Market Reaction Comparison
-  -> Observed Pathway Generation
-  -> Executive Memo
-  -> Export Package
-```
-
-`src/run_scenario.py` now generates a structured Markdown workbench report with clearly separated sections:
+`src/run_scenario.py` generates a structured Markdown workbench report with clearly separated sections:
 
 - A. Scenario Classification
 - B. Historical Analogues
@@ -218,7 +169,12 @@ Geopolitical_Intelligence_Analyst_Copilot/
     event_firm_returns.csv
     sample_user_queries.csv
   docs/
+    analyst_validation_suite.md
+    analyst_workbench.md
     architecture.md
+    example_questions.md
+    workflow_acceptance_tests.md
+    example_outputs/
     methodology.md
     product_spec.md
     roadmap.md
@@ -233,11 +189,13 @@ Geopolitical_Intelligence_Analyst_Copilot/
     compare_market_reactions.py
     generate_brief.py
     generate_pathways.py
+    generate_workbench_report.py
     retrieve_analogs.py
     run_scenario.py
   tests/
     test_classify_event.py
     test_generate_brief.py
+    test_generate_workbench_report.py
     test_retrieve_analogs.py
 ```
 
@@ -281,21 +239,11 @@ Geopolitical Intelligence Analyst Copilot
 
 The flagship system contains the broader evidence base and geopolitical competition framing. This copilot focuses on analyst productivity: scenario intake, classification, retrieval, and memo generation.
 
-## Portfolio Positioning
-
-Geopolitical Intelligence Analyst Copilot demonstrates how research assets and event-study outputs can be converted into an auditable deterministic analyst workflow copilot for executive risk analysis.
-
-For Business Analytics and Strategy Analytics, it demonstrates structured intake-to-memo automation, repeatable decision-support outputs, and clear user workflow design.
-
-For Risk Analytics and Geopolitical Intelligence, it demonstrates transparent event classification, historical analog retrieval, market-reaction context, and explicit safety boundaries.
-
-For AI workflow automation roles, it demonstrates where deterministic automation can create analyst leverage without relying on external APIs, LLM calls, or opaque prediction claims.
-
 ## Skills Demonstrated
 
 - Product analytics architecture
 - Geopolitical risk intelligence design
-- Business, risk, and strategy analytics positioning
+- Business, risk, and strategy analytics framing
 - Analyst productivity workflow automation
 - Historical analog retrieval
 - Event classification
@@ -304,13 +252,6 @@ For AI workflow automation roles, it demonstrates where deterministic automation
 - Responsible AI/product safety boundaries
 - Standard-library Python implementation
 - Reproducible local workflow design
-
-## Validation
-
-```bash
-python3 -m compileall src
-python3 -m unittest discover tests
-```
 
 ## Safety Boundary
 
