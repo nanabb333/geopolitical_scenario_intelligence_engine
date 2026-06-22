@@ -1,0 +1,1 @@
+event_id,event_date,event_t0_trade_date,asset_type,asset_name,ticker_or_index,sector,geography,exposure_role,benchmark,return_window,raw_return,benchmark_return,abnormal_return,data_source,calculation_notes,coding_confidence,limitations

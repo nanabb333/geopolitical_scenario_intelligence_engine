@@ -4,6 +4,13 @@ The V2 US-China Strategic Competition pilot dataset does not yet support market 
 
 This document defines what is needed before V2 market comparison should be enabled.
 
+Related implementation-planning artifacts:
+
+- [V2 Market Data Codebook](v2_market_data_codebook.md)
+- [V2 Market Reaction Template](v2_market_reaction_template.md)
+- [V2 Market Data Collection Plan](v2_market_data_collection_plan.md)
+- `data/us_china_market_reaction_template.csv`
+
 ## Event Date Alignment
 
 Each market row must align to a defensible event trading date.
@@ -162,4 +169,4 @@ Minimum viable coverage:
 
 Do not enable V2 market reaction comparison until a V2 market data file exists and passes validation.
 
-The next sprint should create a market-data template and codebook before calculating any rows.
+The headers-only template now exists at `data/us_china_market_reaction_template.csv`. The next sprint should validate event-to-asset mappings and populate rows only with real sourced return data.

@@ -121,6 +121,13 @@ Minimum market requirements:
 
 Detailed requirements are documented in [V2 Market Data Requirements](v2_market_data_requirements.md).
 
+Additional market data layer references:
+
+- [V2 Market Data Codebook](v2_market_data_codebook.md)
+- [V2 Market Reaction Template](v2_market_reaction_template.md)
+- [V2 Market Data Collection Plan](v2_market_data_collection_plan.md)
+- `data/us_china_market_reaction_template.csv`
+
 ## Retrieval Compatibility Assessment
 
 Current V2 retrieval compatibility: Not ready.
@@ -183,7 +190,7 @@ Before integration, add tests for:
 1. Keep V1 workflow frozen.
 2. Define a deterministic V2-to-V1 transformation specification.
 3. Create a transformed staging file for testing, not production.
-4. Add V2 market-return template rows only after asset mapping and event-date alignment are reviewed.
+4. Use [V2 Market Data Codebook](v2_market_data_codebook.md) and [V2 Market Reaction Template](v2_market_reaction_template.md) to design real market rows only after asset mapping and event-date alignment are reviewed.
 5. Add tests for transformation, retrieval compatibility, and missing-market-data handling.
 6. Run V2 pilot reports in a separate experimental mode or documented notebook after tests pass.
 7. Only then decide whether to add source-level support for V2-native fields.
