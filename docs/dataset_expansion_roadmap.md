@@ -25,10 +25,11 @@ The current dataset contains:
 - 12 coded historical events in `data/events.csv`.
 - 3 event-firm return rows in `data/event_firm_returns.csv`.
 - 4 sample user questions in `data/sample_user_queries.csv`.
+- 15 V2 pilot events in `data/us_china_strategic_competition_pilot.csv` for schema-governed expansion planning.
 - Event coverage from 2022-08-09 to 2024-04-25.
 - Strongest coverage in semiconductor industrial policy, export controls, entity-list actions, semiconductor-equipment restrictions, CHIPS Act support, and selected China/Japan/Taiwan-linked semiconductor cases.
 
-Current coverage should be described as V1 validation coverage, not the full intended product boundary.
+Current V1 workflow coverage should be described as V1 validation coverage, not the full intended product boundary. The V2 pilot dataset is a separate expansion artifact and is not yet wired into the V1 workflow.
 
 ## Why the Workflow Is Generalizable
 
@@ -59,11 +60,35 @@ This is a dataset limitation, not evidence that the workflow must remain semicon
 
 ## Target Future Coverage Areas
 
-Future coverage should expand from semiconductor competition into broader geopolitical risk domains:
+Future coverage should expand from semiconductor competition into a broader US-China strategic competition pilot dataset before moving into fully multi-region geopolitical risk coverage.
 
-- Taiwan military tension
+The V2 pilot should cover:
+
 - Export controls
 - Sanctions
+- AI chip restrictions
+- Semiconductor industrial policy
+- Entity-list actions
+- Critical minerals
+- Supply chain relocation
+- Strategic investment screening
+- Taiwan-related tension as one subcategory
+
+Later expansion can add:
+
+- deeper Taiwan-related tension coverage inside the US-China strategic competition frame
+- Military exercise
+- Shipping and maritime disruption
+- Energy security
+- Cyber operations
+- Defense industrial policy
+- AI infrastructure competition
+
+## Why US-China Strategic Competition Is the Stronger Portfolio Framing
+
+US-China strategic competition is a stronger V2 portfolio frame than a Taiwan-first pilot because it has broader market and risk relevance. It connects semiconductors, trade restrictions, sanctions, supply chains, critical minerals, investment screening, AI infrastructure, and geopolitical escalation into one coherent analytics domain.
+
+This framing is also more recognizable to recruiters and analytics hiring managers. It demonstrates risk analytics judgment without narrowing the product narrative to one flashpoint. Taiwan remains important, but it should be treated as one event family within the broader US-China strategic competition dataset.
 - Semiconductor industrial policy
 - Energy security
 - Shipping and maritime disruption
@@ -76,10 +101,11 @@ Future coverage should expand from semiconductor competition into broader geopol
 
 | Category | Why It Matters | Example Event Types | Market or Sector Relevance | Current Dataset Support | Recommended Priority |
 | --- | --- | --- | --- | --- | --- |
-| Taiwan military tension | Taiwan risk is central to semiconductor supply chains, regional security, and global risk analysis. | Military exercises, blockade-risk episodes, airspace incursions, crisis communications, shipping disruption warnings. | Semiconductors, shipping, defense, insurance, regional equities, supply-chain exposed firms. | Partially Supported | High |
+| US-China strategic competition pilot dataset | Provides the broadest V2 bridge from the current semiconductor validation set into trade, sanctions, supply chains, technology restrictions, critical minerals, AI infrastructure, and geopolitical risk. | Export controls, sanctions, AI chip restrictions, semiconductor industrial policy, entity-list actions, critical minerals restrictions, supply-chain relocation, investment screening, Taiwan-related tension. | Semiconductors, AI infrastructure, cloud, critical minerals, industrials, logistics, defense, multinational technology firms, regional equities. | Partially Supported | High |
 | Export controls | Export controls are already core to the current dataset and are a natural expansion path. | Advanced chip controls, equipment restrictions, software restrictions, allied-control alignment, license-rule changes. | Semiconductors, AI chips, equipment suppliers, cloud infrastructure, multinational technology firms. | Supported | High |
 | Sanctions | Sanctions are a common geopolitical risk mechanism but current coverage is only adjacent through entity-list and restriction cases. | Entity-list actions, financial sanctions, procurement bans, secondary sanctions, sectoral sanctions. | Technology, finance, defense, energy, logistics, affected counterparties. | Partially Supported | High |
 | Semiconductor industrial policy | This is the validated V1 domain and should remain a benchmark category for data quality. | Subsidy awards, fab investments, industrial-policy legislation, tax credits, capacity guarantees. | Semiconductor manufacturers, equipment suppliers, foundries, memory firms, regional development. | Supported | High |
+| Taiwan-related tension | Taiwan remains strategically relevant, but should be coded as one subcategory inside the broader US-China competition pilot unless the dataset later expands into a dedicated Taiwan risk module. | Military exercises, blockade-risk episodes, airspace incursions, crisis communications, Taiwan-linked supply-chain risk. | Semiconductors, shipping, defense, insurance, regional equities, supply-chain exposed firms. | Partially Supported | Medium |
 | Energy security | Energy shocks are a major geopolitical risk domain currently absent from the dataset. | Oil sanctions, gas supply disruptions, strategic reserve actions, LNG restrictions, pipeline incidents. | Energy producers, utilities, transport, inflation-sensitive sectors, regional markets. | Unsupported | Medium |
 | Shipping and maritime disruption | Maritime disruptions connect geopolitical shocks to supply chains and inflation risk. | Strait closures, port disruption, maritime insurance changes, naval incidents, rerouting announcements. | Shipping, logistics, retail supply chains, commodities, semiconductors, insurers. | Unsupported | High |
 | Critical minerals | Critical minerals are increasingly strategic for energy transition, defense, and technology supply chains. | Export restrictions, mine nationalization, processing bans, strategic stockpiles, subsidy programs. | Batteries, electric vehicles, defense, energy storage, industrials. | Unsupported | Medium |
@@ -122,14 +148,15 @@ Minimum recommended target:
 
 Minimum category mix:
 
-- Taiwan military tension: 8-12 events.
-- Export controls: 10-15 events.
-- Sanctions: 8-12 events.
-- Semiconductor industrial policy: retain and expand to 15-20 events.
-- Shipping and maritime disruption: 8-12 events.
-- AI infrastructure competition: 8-12 events.
+- US-China strategic competition pilot: 30-45 events across multiple subcategories.
+- Export controls and AI chip restrictions: 8-12 events.
+- Sanctions and entity-list actions: 6-10 events.
+- Semiconductor industrial policy: retain and expand to 12-18 events.
+- Critical minerals and supply-chain relocation: 6-10 events.
+- Strategic investment screening: 4-8 events.
+- Taiwan-related tension: 4-8 events as one subcategory, not the central framing.
 
-Energy security, critical minerals, cyber operations, and defense industrial policy can be added in later batches if V2 capacity is limited.
+Energy security, cyber operations, defense industrial policy, and broader shipping disruption can be added in later batches if V2 capacity is limited.
 
 ## Data Quality Standards
 
@@ -158,14 +185,16 @@ Use the V2 dataset architecture documents as governing references:
 - [Event Dictionary](event_dictionary.md)
 - [Coding Rules](coding_rules.md)
 - [V2 Dataset Readiness Assessment](v2_dataset_readiness_assessment.md)
+- [US-China Pilot Dataset Summary](us_china_pilot_dataset_summary.md)
+- [US-China Pilot Coding Log](us_china_pilot_coding_log.md)
 
 Suggested scope:
 
 1. Freeze V1 code and current validation package.
 2. Use `docs/dataset_schema_v2.md` as the target schema for candidate events.
 3. Use `docs/event_coding_template.md` and `docs/event_dictionary.md` for all candidate-event coding.
-4. Select 2 expansion categories for pilot coding: Taiwan military tension and shipping/maritime disruption.
-5. Code 10-15 candidate events without changing retrieval or report-generation logic.
+4. Build a US-China strategic competition pilot dataset covering export controls, sanctions, AI chip restrictions, semiconductor industrial policy, entity-list actions, critical minerals, supply-chain relocation, strategic investment screening, and Taiwan-related tension as one subcategory.
+5. Code 30-45 candidate events without changing retrieval or report-generation logic.
 6. Run a coverage review before deciding whether source logic needs any V2 extensions.
 
 Do not change architecture until the new data shows a concrete limitation.

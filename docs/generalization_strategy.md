@@ -93,6 +93,21 @@ Adding new event categories would improve:
 
 Expansion should start with historical data, not new features. The next product risk is not lack of UI or model complexity; it is insufficient event coverage for broad claims.
 
+## Recommended V2 Expansion Frame
+
+The recommended V2 expansion frame is a US-China strategic competition pilot dataset.
+
+This is stronger than a Taiwan-first pilot because it captures a broader risk analytics domain while still connecting naturally to the V1 semiconductor validation set. US-China strategic competition links semiconductors, export controls, sanctions, entity-list actions, AI chip restrictions, critical minerals, supply-chain relocation, investment screening, and Taiwan-related tension.
+
+Taiwan remains relevant, but it should be one subcategory within the broader US-China competition pilot rather than the central product narrative.
+
+This framing improves portfolio value because it:
+
+- has broader market relevance across technology, industrials, critical minerals, logistics, defense, and regional exposure;
+- is more recognizable to risk analytics and strategy recruiters;
+- connects trade, sanctions, supply chains, technology policy, and geopolitical risk in one coherent domain;
+- avoids over-narrowing the product around one flashpoint.
+
 ## Recommended Language for README
 
 Recommended short language:
@@ -104,7 +119,7 @@ Geopolitical Intelligence Analyst Copilot is a general geopolitical intelligence
 Recommended scope language:
 
 ```text
-The V1 architecture is designed to generalize across geopolitical risk domains, but the current data coverage is strongest for semiconductor industrial policy, export controls, entity-list actions, and selected technology-restriction cases from 2022-2024. Broader categories such as Taiwan military tension, energy security, shipping disruption, critical minerals, cyber operations, sanctions, and defense industrial policy require future dataset expansion before they should be treated as directly supported.
+The V1 architecture is designed to generalize across geopolitical risk domains, but the current data coverage is strongest for semiconductor industrial policy, export controls, entity-list actions, and selected technology-restriction cases from 2022-2024. The recommended V2 expansion direction is a US-China strategic competition pilot dataset covering export controls, sanctions, AI chip restrictions, semiconductor industrial policy, critical minerals, supply-chain relocation, investment screening, and Taiwan-related tension as one subcategory.
 ```
 
 Recommended boundary language:

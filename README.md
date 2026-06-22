@@ -83,7 +83,11 @@ Current validation status:
 
 The system is designed as a general geopolitical intelligence workflow platform. Current V1 validation uses the available semiconductor-focused historical analogue dataset. Coverage is strongest for U.S. semiconductor subsidies, CHIPS Act support announcements, export controls, entity-list actions, semiconductor-equipment restrictions, and selected China/Japan/Taiwan-linked cases from 2022-2024.
 
-Questions about Taiwan blockade, broad military escalation, shipping disruption, energy, cyber, critical minerals, broad sanctions, or real-time events are not directly supported by the current data. They should be reframed around semiconductor policy or technology restrictions, or deferred until future dataset expansion. This is a dataset coverage limitation, not a rejection of the workflow architecture. See [Data Coverage Audit](docs/data_coverage_audit.md), [Supported Questions Boundary](docs/supported_questions_boundary.md), [Dataset Expansion Roadmap](docs/dataset_expansion_roadmap.md), and [Generalization Strategy](docs/generalization_strategy.md).
+The recommended V2 expansion direction is a US-China strategic competition pilot dataset covering export controls, sanctions, AI chip restrictions, semiconductor industrial policy, entity-list actions, critical minerals, supply-chain relocation, strategic investment screening, and Taiwan-related tension as one subcategory. Taiwan is relevant, but it is not the central product framing.
+
+The repository now includes a separate schema-governed V2 pilot file, `data/us_china_strategic_competition_pilot.csv`, with documentation in [US-China Pilot Dataset Summary](docs/us_china_pilot_dataset_summary.md) and [US-China Pilot Coding Log](docs/us_china_pilot_coding_log.md). This pilot is for future dataset expansion planning and is not yet wired into the V1 workflow.
+
+Questions about Taiwan blockade, broad military escalation, shipping disruption, energy, cyber, critical minerals, broad sanctions, or real-time events are not directly supported by the current data. They should be reframed around currently supported semiconductor policy or technology restrictions, or deferred until future dataset expansion. This is a dataset coverage limitation, not a rejection of the workflow architecture. See [Data Coverage Audit](docs/data_coverage_audit.md), [Supported Questions Boundary](docs/supported_questions_boundary.md), [Dataset Expansion Roadmap](docs/dataset_expansion_roadmap.md), and [Generalization Strategy](docs/generalization_strategy.md).
 
 ## Portfolio Value
 
@@ -178,6 +182,7 @@ Geopolitical_Intelligence_Analyst_Copilot/
     events.csv
     event_firm_returns.csv
     sample_user_queries.csv
+    us_china_strategic_competition_pilot.csv
   docs/
     analyst_validation_suite.md
     analyst_workbench.md
@@ -187,6 +192,8 @@ Geopolitical_Intelligence_Analyst_Copilot/
     example_questions.md
     generalization_strategy.md
     supported_questions_boundary.md
+    us_china_pilot_coding_log.md
+    us_china_pilot_dataset_summary.md
     workflow_acceptance_tests.md
     example_outputs/
     methodology.md
@@ -223,6 +230,8 @@ Geopolitical_Intelligence_Analyst_Copilot/
 - [Supported Questions Boundary](docs/supported_questions_boundary.md)
 - [Dataset Expansion Roadmap](docs/dataset_expansion_roadmap.md)
 - [Generalization Strategy](docs/generalization_strategy.md)
+- [US-China Pilot Dataset Summary](docs/us_china_pilot_dataset_summary.md)
+- [US-China Pilot Coding Log](docs/us_china_pilot_coding_log.md)
 - [Product Spec](docs/product_spec.md)
 - [Architecture](docs/architecture.md)
 - [Methodology](docs/methodology.md)

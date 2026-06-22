@@ -38,33 +38,34 @@ Broader datasets can be introduced if future events preserve structured fields f
 - Maintaining deterministic rules while expanding vocabulary.
 - Preventing example questions from outpacing actual coded data coverage.
 
-## Recommended First Expansion Category
+## Recommended First Expansion Direction
 
-Recommended first expansion category: Taiwan military tension.
+Recommended first expansion direction: US-China Strategic Competition Pilot Dataset.
 
 Reasoning:
 
-- It is strategically important and recruiter-relevant.
 - It connects naturally to the current semiconductor validation dataset.
-- It exposes the current system's most important coverage gap.
-- It can test whether the workflow handles geopolitical tension beyond industrial policy.
-- It supports later expansion into shipping disruption, defense, insurance, and regional-market exposure.
+- It is broader and more recruiter-recognizable than a Taiwan-first framing.
+- It connects semiconductors, trade, sanctions, supply chains, AI infrastructure, critical minerals, investment screening, and geopolitical risk.
+- It tests whether the workflow handles multiple strategic-competition mechanisms without requiring new product features.
+- It preserves Taiwan-related tension as an important subcategory without making Taiwan the central product narrative.
+- It has stronger risk analytics relevance across technology, industrials, logistics, defense, critical minerals, and regional exposure.
 
 Recommended pilot scope:
 
-- 8-12 Taiwan military-tension events.
-- Include military exercises, escalation episodes, blockade-risk signals, diplomatic triggers, and de-escalation events.
-- Code event-date confidence carefully.
-- Separate military-tension events from semiconductor-policy events unless the source directly links them.
+- 30-45 candidate events across US-China strategic competition.
+- Include export controls, sanctions, AI chip restrictions, semiconductor industrial policy, entity-list actions, critical minerals, supply-chain relocation, strategic investment screening, and Taiwan-related tension as one subcategory.
+- Code event-date confidence carefully, especially for sanctions implementation, investment-screening decisions, and multi-stage policy actions.
+- Keep Taiwan-related events distinct from semiconductor-policy events unless the source directly links them.
 - Add market rows only where event dates and affected assets are defensible.
 
-Second recommended category: Shipping and maritime disruption.
+Second recommended expansion direction: targeted category deepening after the US-China pilot.
 
 Reasoning:
 
-- It is adjacent to Taiwan tension and supply-chain risk.
-- It broadens the system beyond semiconductors while remaining analytically concrete.
-- It adds portfolio relevance for logistics, energy, commodities, and inflation-sensitive sectors.
+- After a US-China pilot, the strongest next deepening areas are shipping and maritime disruption, energy security, cyber operations, and defense industrial policy.
+- These categories should be added after the pilot clarifies whether schema changes or workflow logic changes are necessary.
+- This sequencing avoids overclaiming broad coverage before the dataset exists.
 
 ## Readiness Verdict
 

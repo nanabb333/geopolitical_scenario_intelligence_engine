@@ -2,6 +2,41 @@
 
 This dictionary defines standardized V2 event categories for future geopolitical dataset expansion. It is intended to make coding consistent across domains while preserving the current deterministic workflow architecture.
 
+## US-China Strategic Competition Pilot Dataset
+
+### Definition
+
+A V2 pilot dataset umbrella for events that materially reflect strategic competition between the United States and China through technology controls, sanctions, industrial policy, supply chains, critical minerals, investment screening, AI infrastructure, or related geopolitical tension.
+
+This is an expansion frame, not a claim that the current dataset already covers all listed mechanisms.
+
+### Inclusion Criteria
+
+- Export controls or technology-transfer restrictions involving U.S.-China competition.
+- Sanctions, entity-list actions, procurement bans, or investment restrictions.
+- AI chip restrictions, compute controls, or AI infrastructure competition.
+- Semiconductor industrial policy linked to strategic competition.
+- Critical-minerals restrictions, stockpiling, or processing-policy actions.
+- Supply-chain relocation or friend-shoring actions linked to U.S.-China risk.
+- Strategic investment screening or national-security review actions.
+- Taiwan-related tension when it affects U.S.-China strategic competition, technology supply chains, shipping, or market risk.
+
+### Exclusion Criteria
+
+- Taiwan-related events with no U.S.-China strategic-competition relevance.
+- General bilateral diplomacy without market, policy, security, or supply-chain mechanism.
+- Routine trade disputes without strategic competition, security, technology, or supply-chain relevance.
+- Events that require forecasting, probability estimates, or investment recommendations to interpret.
+
+### Example Events
+
+- Advanced chip export-control update.
+- Entity-list action against a technology firm.
+- Strategic investment screening decision.
+- Critical-minerals export restriction.
+- Supply-chain relocation policy.
+- Taiwan-related military or diplomatic tension affecting technology supply-chain risk.
+
 ## Semiconductor Policy
 
 ### Definition
@@ -74,6 +109,123 @@ Legal or administrative restrictions imposed on firms, individuals, governments,
 - Entity-list designation.
 - Sectoral sanctions on a strategic industry.
 - Procurement ban against named firms.
+
+## Sanctions / Entity List
+
+### Definition
+
+Entity-list, blacklist, procurement-ban, or sanctions-style actions that restrict named firms, organizations, or sectors in a US-China strategic competition context.
+
+### Inclusion Criteria
+
+- Commerce Entity List additions.
+- Procurement restrictions against named firms.
+- Sanctions or blacklist actions with technology, security, or supply-chain relevance.
+
+### Exclusion Criteria
+
+- Broad export-control rules without named targets.
+- General diplomatic statements without legal or procurement consequence.
+
+### Example Events
+
+- Addition of a Chinese technology firm to the Entity List.
+- Procurement restriction against a named semiconductor company.
+- Sectoral restriction affecting strategic technology access.
+
+## AI Chip Restrictions
+
+### Definition
+
+Controls, license requirements, or policy actions that restrict access to advanced AI accelerators, high-performance computing chips, or related AI-chip manufacturing capability.
+
+### Inclusion Criteria
+
+- Advanced AI-chip export restrictions.
+- High-bandwidth memory or accelerator controls.
+- Restrictions on AI-chip manufacturing equipment or software.
+- Controls aimed at preventing military or strategic AI capability transfer.
+
+### Exclusion Criteria
+
+- General AI regulation without compute or chip infrastructure relevance.
+- Semiconductor policy without AI-chip or advanced-computing connection.
+
+### Example Events
+
+- Updated AI accelerator export controls.
+- HBM restrictions tied to AI-chip production.
+- License rules for advanced computing items.
+
+## Industrial Policy
+
+### Definition
+
+Government funding, legislation, tax incentives, or strategic programs designed to build domestic industrial capacity in strategically important sectors.
+
+### Inclusion Criteria
+
+- Semiconductor subsidies.
+- Strategic manufacturing legislation.
+- State-backed technology funds.
+- Industrial-capacity support tied to national security or strategic competition.
+
+### Exclusion Criteria
+
+- Company-only capital expenditure with no policy support.
+- Routine economic policy without strategic sector targeting.
+
+### Example Events
+
+- CHIPS Act enactment.
+- National semiconductor fund launch.
+- Strategic manufacturing subsidy program.
+
+## Strategic Investment Screening
+
+### Definition
+
+Rules, executive actions, or review mechanisms that screen, restrict, or require notification of cross-border investment in strategic sectors.
+
+### Inclusion Criteria
+
+- Outbound investment restrictions.
+- National-security investment review rules.
+- Restrictions on investment in sensitive technology sectors.
+
+### Exclusion Criteria
+
+- Routine merger review without national-security rationale.
+- Capital-market movements without policy action.
+
+### Example Events
+
+- Executive order on outbound investment in sensitive technologies.
+- Final rule restricting investment in advanced technology sectors.
+- National-security review of strategic technology investment.
+
+## Supply Chain Relocation
+
+### Definition
+
+Policy or firm events that materially shift strategic production, sourcing, or manufacturing capacity away from geopolitical-risk exposure.
+
+### Inclusion Criteria
+
+- Friend-shoring or reshoring policy actions.
+- State-backed relocation of strategic manufacturing.
+- Supply-chain diversification programs tied to US-China risk.
+
+### Exclusion Criteria
+
+- Routine facility expansion without strategic relocation rationale.
+- Logistics changes without geopolitical or supply-chain-risk connection.
+
+### Example Events
+
+- State-backed semiconductor fab relocation.
+- Supply-chain diversification away from China exposure.
+- Strategic manufacturing move linked to national-security policy.
 
 ## Taiwan Tension
 
