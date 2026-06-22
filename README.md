@@ -1,8 +1,6 @@
 # Geopolitical Intelligence Analyst Copilot
 
-Analyst Workflow Copilot.
-
-A lightweight deterministic analyst workflow copilot that converts geopolitical scenario questions into structured intelligence briefs using transparent classification, historical analog retrieval, and Markdown memo generation.
+A portfolio-ready analyst workflow copilot for geopolitical scenario intake, event classification, historical analog retrieval, market-reaction context, and Markdown memo generation.
 
 This repository converts a user-described geopolitical event into a deterministic historical analog analysis using a local event-study database. It is designed as a research-to-intelligence workflow automation layer, not a forecasting system or investment tool.
 
@@ -21,7 +19,7 @@ User question
   -> Executive brief
 ```
 
-The V0.1 workflow produces:
+The workflow produces:
 
 1. User Event Description
 2. Event Classification
@@ -117,7 +115,7 @@ Geopolitical_Intelligence_Analyst_Copilot/
 
 ## Core Scripts
 
-- `src/run_scenario.py`: main V0.1 orchestration CLI
+- `src/run_scenario.py`: main orchestration CLI
 - `src/classify_event.py`: deterministic rule-based event classification
 - `src/retrieve_analogs.py`: weighted historical analog retrieval
 - `src/compare_market_reactions.py`: observed event-study reaction summaries
@@ -146,10 +144,18 @@ The flagship system contains the broader evidence base and geopolitical competit
 
 Geopolitical Intelligence Analyst Copilot demonstrates how research assets and event-study outputs can be converted into an auditable deterministic analyst workflow copilot for executive risk analysis.
 
+For Business Analytics and Strategy Analytics, it demonstrates structured intake-to-memo automation, repeatable decision-support outputs, and clear user workflow design.
+
+For Risk Analytics and Geopolitical Intelligence, it demonstrates transparent event classification, historical analog retrieval, market-reaction context, and explicit safety boundaries.
+
+For AI workflow automation roles, it demonstrates where deterministic automation can create analyst leverage without relying on external APIs, LLM calls, or opaque prediction claims.
+
 ## Skills Demonstrated
 
 - Product analytics architecture
 - Geopolitical risk intelligence design
+- Business, risk, and strategy analytics positioning
+- Analyst productivity workflow automation
 - Historical analog retrieval
 - Event classification
 - Event-study interpretation

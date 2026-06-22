@@ -1,20 +1,22 @@
-# Product Specification: V0.1
+# Product Specification: Portfolio-Ready V1
 
 ## Product Goal
 
-Build a lightweight Geopolitical Intelligence Analyst Copilot that converts a user-described event into a structured historical analog brief using the existing event-study database.
+Define a lightweight Geopolitical Intelligence Analyst Copilot that converts a user-described event into a structured historical analog brief using the existing event-study database.
 
 ## User
 
-Primary V0.1 users are researchers, analysts, and strategy teams who need to translate a geopolitical event narrative into a disciplined historical comparison and reusable Markdown memo.
+Primary users are researchers, analysts, and strategy teams who need to translate a geopolitical event narrative into a disciplined historical comparison and reusable Markdown memo.
 
 ## User Workflow
 
 ```text
-User Event Description
-  -> Event Classification
-  -> Historical Analog Retrieval
-  -> Scenario Brief Generation
+Scenario Input
+  -> Classification
+  -> Historical Analogue Retrieval
+  -> Market Reaction Comparison
+  -> Pathway Generation
+  -> Executive Memo
 ```
 
 ## Required Inputs
@@ -76,7 +78,7 @@ Concise intelligence-style Markdown brief suitable for research and strategy rev
 - Automated data enrichment
 - Model-driven generation
 
-## V0.1 Acceptance Criteria
+## V1 Freeze Acceptance Criteria
 
 - Runs locally with Python standard library only
 - Reads only local CSV inputs
@@ -87,4 +89,4 @@ Concise intelligence-style Markdown brief suitable for research and strategy rev
 
 ## Future Versions
 
-Future versions may add richer ontologies, analyst review workflows, confidence diagnostics, vector retrieval, or API deployment. Those are intentionally out of scope for V0.1.
+Future versions may add richer ontologies, analyst review workflows, confidence diagnostics, vector retrieval, or API deployment. Those are intentionally out of scope for the V1 freeze.

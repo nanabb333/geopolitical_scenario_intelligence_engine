@@ -1,10 +1,10 @@
 # Roadmap
 
-## V0.1: Publication-Ready Deterministic MVP
+## Origin: Deterministic MVP
 
-Goal: make the local analyst workflow copilot credible, reproducible, and clear for GitHub publication.
+The repository originated as a deterministic MVP: local CSV inputs, transparent classification, historical analog retrieval, market-reaction context, and Markdown brief generation.
 
-Included:
+That MVP established:
 
 - local CSV inputs only
 - deterministic event classification
@@ -17,6 +17,20 @@ Included:
 - examples
 - basic tests
 
+## V1: Portfolio-Ready Analyst Workflow Copilot
+
+The public version is now positioned as a portfolio-ready V1 analyst workflow copilot. It is intentionally lightweight, deterministic, and CLI-first.
+
+V1 demonstrates:
+
+- scenario intake automation
+- classification workflow design
+- historical analog retrieval
+- market-reaction comparison
+- pathway generation
+- executive memo generation
+- explicit non-forecasting safety boundaries
+
 Not included:
 
 - live news retrieval
@@ -26,7 +40,7 @@ Not included:
 - probability estimates
 - trading or investment recommendations
 
-## V0.2: Transparent Similarity Scoring And Retrieval Diagnostics
+## Future: Transparent Similarity Scoring And Retrieval Diagnostics
 
 Goal: improve analyst trust in the retrieval layer.
 
@@ -39,7 +53,7 @@ Planned:
 - stronger sector and mechanism matching
 - retrieval test fixtures
 
-## V0.3: Structured Run Artifacts
+## Future: Structured Run Artifacts
 
 Goal: make scenario runs auditable and easier to connect to future product interfaces.
 
@@ -54,9 +68,9 @@ Planned:
 - `pathways.json`
 - `brief.md`
 
-## V1.0: Geopolitical Intelligence Analyst Copilot Workflow
+## Future: Expanded Geopolitical Intelligence Analyst Copilot Workflow
 
-Goal: deliver a complete research-to-intelligence workflow automation layer suitable for portfolio demonstration and analyst review.
+Goal: expand the research-to-intelligence workflow automation layer while preserving deterministic, auditable analyst review.
 
 Planned:
 
@@ -68,4 +82,4 @@ Planned:
 - test coverage around core workflow
 - dashboard-ready JSON outputs
 
-V1.0 should remain historically grounded and decision-support focused.
+Future versions should remain historically grounded and decision-support focused.

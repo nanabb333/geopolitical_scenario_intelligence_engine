@@ -14,6 +14,11 @@ Geopolitical Intelligence Analyst Copilot is a deterministic analyst workflow la
 ## Components
 
 ```text
+src/run_scenario.py
+  - Main CLI entry point for the analyst workflow.
+  - Accepts a scenario query, analog count, and Markdown output path.
+  - Orchestrates classification, retrieval, market context, pathways, and memo generation.
+
 src/classify_event.py
   - Converts a free-text event description into a structured event profile.
   - Uses keyword and phrase rules.
@@ -25,20 +30,29 @@ src/retrieve_analogs.py
   - Joins available market reaction records.
   - Returns ranked analogs and score explanations.
 
+src/compare_market_reactions.py
+  - Summarizes observed event-study reaction context from event_firm_returns.csv.
+  - Reports historical market-reaction context without forecasting.
+
+src/generate_pathways.py
+  - Generates deterministic qualitative pathway frames from classification and analog metadata.
+  - Keeps pathways non-predictive and analyst-review oriented.
+
 src/generate_brief.py
-  - Orchestrates classification and retrieval.
-  - Formats a Markdown intelligence brief.
+  - Formats the final Markdown intelligence memo.
   - Writes to stdout or results/*.md.
 ```
 
 ## Data Flow
 
 ```text
-User description
+Scenario input
   -> classify_event.classify_event()
   -> retrieve_analogs.retrieve_analogs()
+  -> compare_market_reactions.summarize_reactions()
+  -> generate_pathways.generate_pathways()
   -> generate_brief.generate_brief()
-  -> Markdown brief
+  -> Markdown executive memo
 ```
 
 ## Retrieval Scoring
