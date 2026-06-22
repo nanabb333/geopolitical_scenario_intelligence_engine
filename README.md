@@ -10,6 +10,8 @@ The product helps analysts move from an unstructured geopolitical question to a 
 
 It is intentionally scoped as an analyst productivity tool. It does not replace analyst judgement, ingest live news, call external APIs, use LLMs, make forecasts, estimate probabilities, or recommend investments.
 
+For a fast review, start with [Project At A Glance](docs/project_at_a_glance.md), [Recruiter Demo Guide](docs/recruiter_demo_guide.md), and [Executive Demo Case](docs/executive_demo_case.md).
+
 ## Demo Workflow
 
 ```text
@@ -29,6 +31,12 @@ The demo workflow is implemented through local CSV inputs and standard-library P
 - market comparison summarizes local event-study rows only;
 - observed pathways are deterministic analyst-review frames;
 - executive memo generation packages the evidence into a reusable Markdown report.
+
+## Scenario Intelligence Layer
+
+The repository is moving from event-centric retrieval toward question-centric scenario intelligence while preserving the same deterministic workflow. Analyst questions can be organized into scenario families such as Technology Competition, Industrial Policy, Economic Security, Resource Competition, Supply Chain Risk, and Strategic Competition before analogue and market evidence review.
+
+This layer improves product usability without adding forecasts, probabilities, investment advice, LLM calls, APIs, or workflow redesign. See [Scenario Taxonomy](docs/scenario_taxonomy.md), [Question Library](docs/question_library.md), [Current Relevance Framework](docs/current_relevance_framework.md), and [Scenario Intelligence Layer](docs/scenario_intelligence_layer.md).
 
 ## How To Run
 
@@ -98,6 +106,12 @@ This project is relevant to analytics and risk roles because it demonstrates how
 - Workflow Automation: automates intake-to-memo packaging while preserving transparent intermediate steps for analyst review.
 - AI-assisted decision support: shows where deterministic automation can support intelligence workflows without LLM calls or opaque prediction claims.
 - Analyst Productivity: reduces first-pass memo assembly work and gives reviewers a consistent evidence format.
+
+## Who Uses This Product?
+
+The intended users are analysts who need structured geopolitical risk context rather than forecasts or trading recommendations: risk analysts, strategy analysts, market intelligence analysts, policy analysts, and corporate planning analysts. The system helps them frame questions, retrieve historical analogues, review available market evidence, and prepare executive-ready memos with clear caveats.
+
+See [Analyst Use Cases](docs/analyst_use_cases.md), [Intelligence Playbooks](docs/intelligence_playbooks.md), [Analyst Personas](docs/analyst_personas.md), [Business Value Framework](docs/business_value_framework.md), and [Product Demo Walkthrough](docs/product_demo_walkthrough.md).
 
 ## Example Analyst Questions
 
@@ -223,6 +237,15 @@ Geopolitical_Intelligence_Analyst_Copilot/
 ## Documentation
 
 - [Analyst Workbench](docs/analyst_workbench.md)
+- [Project At A Glance](docs/project_at_a_glance.md)
+- [Recruiter Demo Guide](docs/recruiter_demo_guide.md)
+- [Executive Demo Case](docs/executive_demo_case.md)
+- [Interview Talking Points V2](docs/interview_talking_points_v2.md)
+- [Analyst Use Cases](docs/analyst_use_cases.md)
+- [Intelligence Playbooks](docs/intelligence_playbooks.md)
+- [Analyst Personas](docs/analyst_personas.md)
+- [Business Value Framework](docs/business_value_framework.md)
+- [Product Demo Walkthrough](docs/product_demo_walkthrough.md)
 - [Analyst Validation Suite](docs/analyst_validation_suite.md)
 - [Workflow Acceptance Tests](docs/workflow_acceptance_tests.md)
 - [Example Analyst Questions](docs/example_questions.md)
@@ -230,6 +253,11 @@ Geopolitical_Intelligence_Analyst_Copilot/
 - [Supported Questions Boundary](docs/supported_questions_boundary.md)
 - [Dataset Expansion Roadmap](docs/dataset_expansion_roadmap.md)
 - [Generalization Strategy](docs/generalization_strategy.md)
+- [Scenario Taxonomy](docs/scenario_taxonomy.md)
+- [Question Library](docs/question_library.md)
+- [Current Relevance Framework](docs/current_relevance_framework.md)
+- [Scenario Intelligence Layer](docs/scenario_intelligence_layer.md)
+- [Product Upgrade Memo](docs/product_upgrade_memo.md)
 - [US-China Pilot Dataset Summary](docs/us_china_pilot_dataset_summary.md)
 - [US-China Pilot Coding Log](docs/us_china_pilot_coding_log.md)
 - [V2 Integration Readiness Audit](docs/v2_integration_readiness_audit.md)
