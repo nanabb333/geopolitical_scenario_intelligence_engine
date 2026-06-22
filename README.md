@@ -1,12 +1,12 @@
 # Geopolitical Intelligence Analyst Copilot
 
-Geopolitical Intelligence Analyst Copilot is a deterministic workflow automation product for geopolitical risk analysis. It turns analyst questions into structured intelligence briefs by combining scenario classification, historical analogue retrieval, observed market-reaction context, pathway framing, and Markdown memo export.
+Geopolitical Intelligence Analyst Copilot is a deterministic geopolitical intelligence workflow platform currently validated on a semiconductor-focused historical analogue dataset. It turns analyst questions into structured intelligence briefs by combining scenario classification, historical analogue retrieval, observed market-reaction context, pathway framing, and Markdown memo export.
 
 The repository demonstrates business analytics, risk analytics, workflow automation, and AI-assisted decision-support thinking in a local, auditable Python project. It is designed as a research-to-intelligence productivity layer, not a forecasting system, trading tool, or investment recommendation engine.
 
 ## Product Overview
 
-The product helps analysts move from an unstructured geopolitical question to a structured evidence brief suitable for portfolio manager, risk committee, strategy team, or graduate portfolio review.
+The product helps analysts move from an unstructured geopolitical question to a structured evidence brief suitable for portfolio manager, risk committee, strategy team, or graduate portfolio review. The V1 workflow is generalizable, while the current evidence base is intentionally narrower.
 
 It is intentionally scoped as an analyst productivity tool. It does not replace analyst judgement, ingest live news, call external APIs, use LLMs, make forecasts, estimate probabilities, or recommend investments.
 
@@ -64,6 +64,10 @@ The repository includes a Validation & Evidence Package for portfolio review:
 - [Analyst Validation Suite](docs/analyst_validation_suite.md)
 - [Workflow Acceptance Tests](docs/workflow_acceptance_tests.md)
 - [Example Analyst Questions](docs/example_questions.md)
+- [Data Coverage Audit](docs/data_coverage_audit.md)
+- [Supported Questions Boundary](docs/supported_questions_boundary.md)
+- [Dataset Expansion Roadmap](docs/dataset_expansion_roadmap.md)
+- [Generalization Strategy](docs/generalization_strategy.md)
 
 Current validation status:
 
@@ -74,6 +78,12 @@ Current validation status:
 - Safety-boundary language: covered by tests
 - No source logic changed during the evidence package sprint
 - Classification, retrieval, scoring, and report-generation logic preserved during this README packaging sprint
+
+## Data Coverage and Scope
+
+The system is designed as a general geopolitical intelligence workflow platform. Current V1 validation uses the available semiconductor-focused historical analogue dataset. Coverage is strongest for U.S. semiconductor subsidies, CHIPS Act support announcements, export controls, entity-list actions, semiconductor-equipment restrictions, and selected China/Japan/Taiwan-linked cases from 2022-2024.
+
+Questions about Taiwan blockade, broad military escalation, shipping disruption, energy, cyber, critical minerals, broad sanctions, or real-time events are not directly supported by the current data. They should be reframed around semiconductor policy or technology restrictions, or deferred until future dataset expansion. This is a dataset coverage limitation, not a rejection of the workflow architecture. See [Data Coverage Audit](docs/data_coverage_audit.md), [Supported Questions Boundary](docs/supported_questions_boundary.md), [Dataset Expansion Roadmap](docs/dataset_expansion_roadmap.md), and [Generalization Strategy](docs/generalization_strategy.md).
 
 ## Portfolio Value
 
@@ -172,7 +182,11 @@ Geopolitical_Intelligence_Analyst_Copilot/
     analyst_validation_suite.md
     analyst_workbench.md
     architecture.md
+    data_coverage_audit.md
+    dataset_expansion_roadmap.md
     example_questions.md
+    generalization_strategy.md
+    supported_questions_boundary.md
     workflow_acceptance_tests.md
     example_outputs/
     methodology.md
@@ -205,6 +219,10 @@ Geopolitical_Intelligence_Analyst_Copilot/
 - [Analyst Validation Suite](docs/analyst_validation_suite.md)
 - [Workflow Acceptance Tests](docs/workflow_acceptance_tests.md)
 - [Example Analyst Questions](docs/example_questions.md)
+- [Data Coverage Audit](docs/data_coverage_audit.md)
+- [Supported Questions Boundary](docs/supported_questions_boundary.md)
+- [Dataset Expansion Roadmap](docs/dataset_expansion_roadmap.md)
+- [Generalization Strategy](docs/generalization_strategy.md)
 - [Product Spec](docs/product_spec.md)
 - [Architecture](docs/architecture.md)
 - [Methodology](docs/methodology.md)
@@ -237,7 +255,7 @@ Opportunity Under Geopolitical Competition
 Geopolitical Intelligence Analyst Copilot
 = workflow automation layer
 
-The flagship system contains the broader evidence base and geopolitical competition framing. This copilot focuses on analyst productivity: scenario intake, classification, retrieval, and memo generation.
+The flagship system contains the broader evidence base and geopolitical competition framing. This copilot focuses on analyst productivity: scenario intake, classification, retrieval, and memo generation. Its workflow architecture is generalizable, while V1 dataset validation is semiconductor-focused.
 
 ## Skills Demonstrated
 
